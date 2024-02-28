@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="">
       <HeaderTop/>
-      <div className="bg-[#444444] text-c mx-28">
+      <div className="bg-[#444444] text-c mx-28 md:flex hidden">
         <ul className="flex justify-start divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-[11px] *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white">
           {/* Add FontAwesome icon to the first list item */}
           <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer text-white bg-green-600 ">

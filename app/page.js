@@ -12,7 +12,7 @@ export default function Home() {
                 <div>
                     <LandingMain/>
                 </div>
-                <div>
+                <div className="h-72">
                     <MostSellItems/>
                 </div>
 
