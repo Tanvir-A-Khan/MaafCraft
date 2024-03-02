@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
                 <HeaderTop />
                 <Navbar />
                    {children}
+                   <h1>Hello from the outside</h1>
                 <Footer />
             </body>
         </html>

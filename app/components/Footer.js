@@ -16,7 +16,7 @@ import {
 const Footer = () => {
     return (
         <div>
-            <div className="flex justify-between px-28 py-12 *:text-xs bg-gray-300">
+            <div className="flex md:flex-row flex-col justify-between px-28 py-12 *:text-xs bg-gray-300">
                 <div className="flex flex-col gap-12 w-1/4">
                     <div className="*:mt-1 *:leading-4">
                         <h1 className="font-bold text-[14px] my-2">
