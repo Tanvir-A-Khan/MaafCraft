@@ -21,15 +21,15 @@ const HeaderTop = () => {
                     <Link href={"/signup"}>Signup</Link>
                 </span>
             </div>
-            <div className="flex-col flex md:flex-row md:mx-28 h-auto m-4 gap-3 items-center justify-center w-auto">
+            <div className="flex-col flex md:flex-row md:mx-28 h-auto m-4 gap-3 items-center justify-center w-auto ">
 
-                <div className="flex justify-center gap-5 mb-3 min-w-32">
+                <div className="flex justify-center gap-5 mb-3 md:min-w-32 min-w-max">
 
-                    <img src="/logo.jpg" alt="logo" className="h-14 " />
+                    <img src="/logo.jpg" alt="logo" className="md:h-14 h-auto w-auto" />
                    
                 </div>
 
-                <div className="flex justify-between align-middle  h-10 border-2 border-green-600 ">
+                <div className="flex justify-between   h-10 border-2 border-green-600 ">
                     <input
                         type="text"
                         placeholder="Enter Product Title"
@@ -55,7 +55,7 @@ const HeaderTop = () => {
                     </div>
                 </div>
 
-                <div className="justify-center align-bottom h-12     hidden md:flex">
+                <div className="justify-center items-center h-12 mb-5    hidden md:flex">
                     <div>
                         <h1 className="font-semibold hover:cursor-pointer hidden md:block">
                             CART
