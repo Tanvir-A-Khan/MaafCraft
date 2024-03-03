@@ -7,7 +7,7 @@ import LandingMain from "./components/LandingMain.js";
 
 export default function Home() {
     return (
-        <main className="bg-[#EFEFEF] h-screen">
+        <main className="bg-[#EFEFEF] h-auto">
             <div className="md:mx-28 py-6">
                 <div>
                     <LandingMain/>

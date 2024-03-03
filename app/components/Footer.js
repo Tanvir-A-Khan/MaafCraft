@@ -16,8 +16,8 @@ import {
 const Footer = () => {
     return (
         <div>
-            <div className="flex md:flex-row flex-col justify-between px-28 py-12 *:text-xs bg-gray-300">
-                <div className="flex flex-col gap-12 w-1/4">
+            <div className="flex md:flex-row flex-col justify-between md:px-28 px-10 py-12 *:text-xs bg-gray-300">
+                <div className="flex flex-col gap-12 md:w-1/4">
                     <div className="*:mt-1 *:leading-4">
                         <h1 className="font-bold text-[14px] my-2">
                             CONTACT DETAILS
@@ -94,18 +94,18 @@ const Footer = () => {
                     <p>Register</p>
                 </div>
                 <div>
-                    <h1 className="font-bold text-[14px] my-2">INFOMATION</h1>
+                    <h1 className="font-bold text-[14px] my-2">INFORMATION</h1>
                     <p>Site: maafcraft.com</p>
                     <p>Email: maafcraftbd@gmail.com</p>
                 </div>
             </div>
 
             {/* LAST PORTION  */}
-            <div className="bg-gray-800 m-0 text-white flex justify-between p-4 *:text-xs px-28 *:uppercase items-center">
+            <div className="bg-gray-800 m-0 text-white flex justify-between p-4 *:text-xs md:px-28 px-10 *:uppercase items-center">
                 <span>
                     Copyright © 2024 Maafcraft.com - All rights reserved
                 </span>
-                <ul className="flex divide-x-2 *:mx-0 divide-solid divide-[#555555] *:px-[11px]  *:text-[12px]  ">
+                <ul className="hidden md:flex divide-x-2 *:mx-0 divide-solid divide-[#555555] *:px-[11px]  *:text-[12px]  ">
                     <li>About us</li>
                     <li>Privacy Policy</li>
                     <li>Terms & Conditions</li>

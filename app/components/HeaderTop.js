@@ -23,9 +23,9 @@ const HeaderTop = () => {
             </div>
             <div className="flex-col flex md:flex-row md:mx-28 h-auto m-4 gap-3 items-center justify-center w-auto ">
 
-                <div className="flex justify-center gap-5 mb-3 md:min-w-32 min-w-max">
+                <div className="flex justify-center gap-5 mb-3 md:min-w-32 min-w-max hover:cursor-pointer">
 
-                    <img src="/logo.jpg" alt="logo" className="md:h-14 h-auto w-auto" />
+                    <img src="/logo.jpg" alt="logo" className="md:h-14 h-auto max-w-48" />
                    
                 </div>
 

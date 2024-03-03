@@ -6,6 +6,7 @@ import {
     faBars,
     faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
@@ -29,25 +30,28 @@ const Navbar = () => {
             </div>
 
             <div className="bg-[#444444] text-c mx-28 hidden md:flex">
-                <ul className="md:flex flex-wrap justify-start divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-[11px] *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white">
+                <ul className=" md:flex flex-wrap justify-start divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-[11px] *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white ">
                     {/* Add FontAwesome icon to the first list item */}
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer text-white bg-green-600 ">
-                        <FontAwesomeIcon
-                            icon={faHome}
-                            className="text-white text-3xl w-5"
-                        />
+                        <Link href="/">
+                            <FontAwesomeIcon
+                                icon={faHome}
+                                className="text-white text-3xl w-5"
+                            />
+                        </Link>
                     </li>
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Home
+                        <Link href="/">Home</Link>
                     </li>
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        About
+                        <Link href="/about">About</Link>
                     </li>
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Certification
+                        <Link href="/certification">Certification</Link>
                     </li>
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Legal License
+                    <Link href="/license">Legal License</Link>
+                        
                     </li>
                     <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
                         Membership
