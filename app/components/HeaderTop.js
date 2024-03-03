@@ -18,7 +18,7 @@ const HeaderTop = () => {
                 <span className="h-auto flex justify-center items-center gap-3 ">
                     <Link href={"/login"}>Login</Link>
                     <span>|</span>
-                    <Link href={"/signup"}>Signup</Link>
+                    <Link href={"/registration"}>Signup</Link>
                 </span>
             </div>
             <div className="flex-col flex md:flex-row md:mx-28 h-auto m-4 gap-3 items-center justify-center w-auto ">
