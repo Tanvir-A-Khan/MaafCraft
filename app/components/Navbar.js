@@ -32,39 +32,55 @@ const Navbar = () => {
             <div className="bg-[#444444] text-c mx-28 hidden md:flex">
                 <ul className=" md:flex flex-wrap justify-start divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-[11px] *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white ">
                     {/* Add FontAwesome icon to the first list item */}
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer text-white bg-green-600 ">
-                        <Link href="/">
+                    <Link href="/" className="hover:bg-[#555555] duration-300 hover:cursor-pointer text-white bg-green-600 ">
+                        <li >
                             <FontAwesomeIcon
                                 icon={faHome}
                                 className="text-white text-3xl w-5"
                             />
-                        </Link>
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        <Link href="/">Home</Link>
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        <Link href="/certification">Certification</Link>
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                    <Link href="/license">Legal License</Link>
-                        
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Membership
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Materials Info
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Gallery
-                    </li>
-                    <li className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
-                        Contact
-                    </li>
+                        </li>
+                    </Link>
+                    <Link href="/" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Home
+                        </li>
+                    </Link>
+                    <Link href="/about" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            About
+                        </li>
+                    </Link>
+                    <Link href="/certification" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Certification
+                        </li>
+                    </Link>
+                    <Link href="/license" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Legal License
+                        </li>
+                    </Link>
+
+                    <Link href={"/membership"} className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Membership
+                        </li>
+                    </Link>
+                    <Link href={"/material-info"} className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Materials Info
+                        </li>
+                    </Link>
+                    <Link href={"/gallery"} className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Gallery
+                        </li>
+                    </Link>
+                    <Link href={"/contact"} className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                        <li >
+                            Contact
+                        </li>
+                    </Link>
                 </ul>
             </div>
         </div>
