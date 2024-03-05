@@ -53,7 +53,7 @@ const RegistrationForm = () => {
       <p className='text-xs my-4'>Don't have an account? <Link href="/login">Create Now</Link></p>
       <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">Register</button>
     </form>
-  );
+  );  
 };
 
 export default RegistrationForm;

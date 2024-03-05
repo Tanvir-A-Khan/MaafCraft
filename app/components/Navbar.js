@@ -6,7 +6,7 @@ import {
     faBars,
     faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import Link from "next/link";       
 
 const Navbar = () => {
     return (
@@ -40,9 +40,9 @@ const Navbar = () => {
                             />
                         </li>
                     </Link>
-                    <Link href="/" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
+                    <Link href="/allproducts" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">
                         <li >
-                            Home
+                            All Products
                         </li>
                     </Link>
                     <Link href="/about" className="hover:bg-[#555555] duration-300 hover:cursor-pointer">

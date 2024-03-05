@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar.js";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
 import HeaderTop from "./components/HeaderTop.js";
 import Footer from "./components/Footer.js";
 
