@@ -27,6 +27,8 @@ const RegistrationForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg my-6 mx-auto p-6 bg-white rounded-lg shadow-lg">
+  
+
       <h2 className="text-xl font-semibold mb-6 uppercase">Create an account</h2>
       <hr />
       <br />

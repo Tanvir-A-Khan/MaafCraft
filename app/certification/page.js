@@ -10,7 +10,7 @@ const Certification = () => {
             <div className="flex-col justify-center gap-10 flex-wrap my-4 items-center md:flex-row flex">
                 <div>
                     <img
-                        className="h-36 w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
+                        className="h-36 hover:scale-105 transition-all w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
                         src="/certification/1.png"
                         alt="Certification 1"
                     />
@@ -23,7 +23,7 @@ const Certification = () => {
                 </div>
                 <div>
                     <img
-                        className="h-36 w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
+                        className="h-36 hover:scale-105 transition-all w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
                         src="/certification/2.png"
                         alt="Certification 2"
                     />
@@ -36,7 +36,7 @@ const Certification = () => {
                 </div>
                 <div>
                     <img
-                        className="h-36 w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
+                        className="h-36 hover:scale-105 transition-all w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
                         src="/certification/3.png"
                         alt="Certification 3"
                     />
@@ -49,7 +49,7 @@ const Certification = () => {
                 </div>
                 <div>
                     <img
-                        className="h-36 w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
+                        className="h-36 hover:scale-105 transition-all w-36 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
                         src="/certification/4.png"
                         alt="Certification 4"
                     />
