@@ -5,6 +5,7 @@ const LandingMain = () => {
     return (
         <div className="md:flex md:justify-between h-[80%]  bg-white border-1 border-black">
             <div className="md:w-[15%]">
+                <h1 className="ps-4 pt-4">All Category</h1>
                 <ul className="p-4  hover:cursor-pointer text-xs">
                     <li className="p-1 border-2 border-transparent hover:border-gray-100">
                         category 1

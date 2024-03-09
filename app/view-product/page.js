@@ -28,14 +28,10 @@ const ViewProduct = () => {
     };
 
     return (
-        <div className="md:mx-28 m-4 flex">
-            <div className="w-1/2 h-auto flex flex-col items-start">
-                <div className="h-auto w-auto">
-                    {/* <img src={img} alt="" /> */}
-                    <ReactImageZoom {...zoomProps} />
-                </div>
+        <div className="md:mx-28 m-4 flex md:flex-row flex-col" >
+            <div className="w-[700px] h-auto flex gap-4 items-start">
 
-                <div className="flex justify-start gap-2 w-11/12 my-4">
+                <div className="flex flex-col justify-start gap-3 ">
                     {/* Displaying the first image separately */}
                     {images.map((image, index) => (
                         <div
@@ -54,6 +50,10 @@ const ViewProduct = () => {
                             />
                         </div>
                     ))}
+                </div>
+                <div className="mx-4">
+                    {/* <img src={img} alt="" /> */}
+                    <ReactImageZoom {...zoomProps} />
                 </div>
             </div>
             <div className="">

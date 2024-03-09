@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const AllProduct = () => {
     return (
-        <div className="flex justify-center w-full">
-            <div className="flex flex-wrap justify-evenly  gap-4 md:mx-28 mx-4 my-3 ">
+        <div className=" px-8">
+            <div className="flex flex-wrap justify-start  gap-5 md:mx-28 mx-4 my-3 ">
                 <Link href="/view-product" className="">
                     <Product />
                 </Link>
