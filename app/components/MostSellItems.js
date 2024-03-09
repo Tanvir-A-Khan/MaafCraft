@@ -9,11 +9,11 @@ const MostSellItems = () => {
                 </p>
                 <div className="flex md:flex-row ">
                     {/* PRODUCT 1 */}
-                    <div className=" border-gray-500 border-[1px] h-[100%] w-48 m-2 p-2 flex flex-col justify-between gap-5">
+                    <div className=" border-gray-500 border-[1px] h-[100%] w-48 m-2 p-2 flex flex-col justify-between gap-5 hover:cursor-pointer ">
                         <img
                             src="/prod1.jpg"
                             alt=""
-                            className=" object-cover"
+                            className=" object-cover hover:scale-110 transition-all"
                         />
                         <span className="flex justify-center items-end h-fit">
                             Product Title

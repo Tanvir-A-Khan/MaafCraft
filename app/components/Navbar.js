@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <div className="">
+        <div className="sticky top-0 z-10">
             <div className="flex justify-center gap-10 ">
                 <div className="justify-center gap-6 h-12  md:hidden flex">
                     <div>

@@ -15,9 +15,10 @@ const Carousel = () => {
       
         <div
             id="carouselExampleCaptions"
-            className="relative p-2"
+            className="relative p-2 hover:cursor-pointer"
             data-te-carousel-init
             data-te-ride="carousel"
+            
         >
             {/* <!--Carousel indicators--> */}
             <div
@@ -63,13 +64,13 @@ const Carousel = () => {
                         className="block w-full "
                         alt="..."
                     />
-                    <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                        {/* <h5 className="text-xl">First slide label</h5>
+                    {/* <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block ">
+                        <h5 className="text-xl">First slide label</h5>
                         <p>
                             Some representative placeholder content for the
                             first slide.
-                        </p> */}
-                    </div>
+                        </p>
+                    </div> */}
                 </div>
                 {/* <!--Second item--> */}
                 <div
@@ -113,12 +114,12 @@ const Carousel = () => {
 
             {/* <!--Carousel controls - prev item--> */}
             <button
-                className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                className=" absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button"
                 data-te-target="#carouselExampleCaptions"
                 data-te-slide="prev"
             >
-                <span className="inline-block h-8 w-8">
+                <span className="h-20 w-10 flex justify-center items-center  bg-gray-800 rounded-xl">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -145,7 +146,7 @@ const Carousel = () => {
                 data-te-target="#carouselExampleCaptions"
                 data-te-slide="next"
             >
-                <span className="inline-block h-8 w-8">
+                <span className=" h-20 w-10 flex justify-center items-center  bg-gray-800 rounded-xl">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

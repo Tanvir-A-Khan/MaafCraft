@@ -11,10 +11,10 @@ const Product = () => {
                 />
             </figure>
             <div className="card-body text-center">
-                <h2 className="card-title text-xl mt-2">Bamboo!</h2>
+                <h2 className="card-title text-xl mt-2">Basket!</h2>
 
                 <div className="card-actions flex justify-around ">
-                    <button className="hover:bg-green-600 btn btn-primary text-xs text-white font-semibold  bg-green-700 m-1 p-1 rounded-md mb-2 ">
+                    <button className="hover:bg-green-400 btn btn-primary text-xs text-white   bg-green-700 m-1 p-2 px-4 rounded-md mb-2 ">
                         Add to cart
                     </button>
                 </div>
