@@ -6,7 +6,7 @@ const AllProduct = () => {
     return (
         <div className="  px-auto">
             
-            <div className="flex flex-wrap justify-start  gap-5 md:mx-28 mx-4 my-3 ">
+            <div className="flex flex-wrap md:justify-start justify-center  gap-5 md:mx-28 mx-4 my-3 ">
                 <Link href="/view-product" className="">
                     <Product />
                 </Link>

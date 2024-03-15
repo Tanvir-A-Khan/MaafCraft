@@ -2,10 +2,13 @@ import React from "react";
 
 const Gallery = () => {
     return (
-        <div className="mx-4">
-            <div className="container mx-auto px-5 py-2 lg:px-32 ">
-              <h1 className="text-3xl font-bold text-center m-4">Photo Gallery</h1>
-                <div className="-m-1 flex flex-wrap md:-m-2 bg-gray-200">
+        <div className="mx-4 ">
+            <div className="container mx-auto px-5 py-2 lg:px-32">
+                <h1 className="text-3xl text-center my-4 uppercase font-bold mb-8">
+                    Photo Gallery
+                </h1>
+
+                <div className="my-8 flex flex-wrap md:m-2 bg-gray-200">
                     <div className="flex w-1/2 flex-wrap ">
                         <div className="w-1/2 p-1 md:p-2">
                             <img

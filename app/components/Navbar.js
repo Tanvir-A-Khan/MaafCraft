@@ -10,30 +10,34 @@ import {
 import Link from "next/link";
 
 const Navbar = () => {
+    const slidebar = ()=>{
+        console.log("slide bar popped");
+    }
     return (
         <div className="sticky top-0 z-10">
-            <div className="flex justify-center gap-10 ">
-                <div className="justify-center gap-6 h-12  md:hidden flex">
+            <div className="flex justify-end items-center gap-10 bg-gray-300 m-2">
+                <div className=" gap-6 h-12  lg:hidden flex flex-row items-center">
                     <div>
                         <Link href={"/"}>
-                        <h1 className="font-semibold hover:cursor-pointer h-[100%] items-center hidden md:block">
+                        <h1 className="font-semibold hover:cursor-pointer h-[100%] items-center hidden lgs:block">
                             CART
                         </h1>
                             <FontAwesomeIcon
                                 icon={faShoppingCart}
-                                className="text-back w-20 hover:cursor-pointer"
+                                className="text-back  hover:cursor-pointer text-3xl "
                             />
                         </Link>
                     </div>
                 </div>
                 <FontAwesomeIcon
                     icon={faBars}
-                    className="text-green-800 text-3xl p-1 mb-4  w-9 md:hidden  hover:cursor-pointer hover:bg-green-800 border-1 border-green-800 hover:text-white h-auto"
-                />
+                    className="text-green-800 text-3xl mr-4 lg:hidden  hover:cursor-pointer "
+                    />
+            
             </div>
 
-            <div className="bg-[#444444] text-c mx-28 hidden md:flex px-0 py-0">
-                <ul className=" md:flex flex-wrap justify-start items-center divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-1 *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white ">
+            <div className="bg-[#444444] text-c mx-28 hidden lg:flex px-0 py-0">
+                <ul className=" lg:flex flex-wrap justify-start items-center divide-x-2 divide-solid divide-[#555555] *:px-[11px] *:py-1 *:text-[12px] *:uppercase *:font-bold *:tracking-wide *:text-white ">
                     {/* Add FontAwesome icon to the first list item */}
                     <Link
                         href="/"

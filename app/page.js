@@ -1,5 +1,6 @@
 import MostSellItems from "./components/MostSellItems.js";
 import LandingMain from "./components/LandingMain.js";
+import OurService from "./components/OurService.js";
 
 export default function Home() {
     return (
@@ -10,6 +11,10 @@ export default function Home() {
                 </div>
                 <div className="h-72">
                     <MostSellItems/>
+                </div>
+
+                <div className="h-auto">
+                    <OurService/>
                 </div>
 
             </div>

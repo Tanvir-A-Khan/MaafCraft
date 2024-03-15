@@ -2,14 +2,14 @@ import React from "react";
 
 const MaterialInfo = () => {
     return (
-        <div className="md:mx-40 m-4">
+        <div className=" m-4">
             <h1 className="text-3xl text-center my-4 uppercase font-bold mb-8">
                 Materials Info
             </h1>
 
-            <div className="*:my-4 mx-40">
+            <div className="*:my-4 md:mx-28">
                 {/* material info */}
-                <div className="flex gap-8">
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/1.jpg" alt="" />
@@ -27,7 +27,8 @@ const MaterialInfo = () => {
                         <img src="./materials/1p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/2.jpg" alt="" />
@@ -42,7 +43,8 @@ const MaterialInfo = () => {
                         <img src="./materials/2p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/3.jpg" alt="" />
@@ -57,7 +59,8 @@ const MaterialInfo = () => {
                         <img src="./materials/3p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/4.jpg" alt="" />
@@ -72,7 +75,8 @@ const MaterialInfo = () => {
                         <img src="./materials/4p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/5.jpg" alt="" />
@@ -87,7 +91,8 @@ const MaterialInfo = () => {
                         <img src="./materials/5p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/6.jpg" alt="" />
@@ -102,7 +107,8 @@ const MaterialInfo = () => {
                         <img src="./materials/6p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/7.jpg" alt="" />
@@ -117,7 +123,8 @@ const MaterialInfo = () => {
                         <img src="./materials/7p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <hr/>
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/8.jpg" alt="" />
@@ -132,7 +139,7 @@ const MaterialInfo = () => {
                         <img src="./materials/8p.jpg" alt="" />
                     </div>
                 </div>
-                <div className="flex gap-8">
+                <div className="flex lg:flex-row flex-col gap-8">
                     {/* Raw material image */}
                     <div className="w-96 h-auto">
                         <img src="./materials/9.jpg" alt="" />
@@ -147,6 +154,7 @@ const MaterialInfo = () => {
                         <img src="./materials/9p.jpg" alt="" />
                     </div>
                 </div>
+                <hr/>
                 
             </div>
         </div>
