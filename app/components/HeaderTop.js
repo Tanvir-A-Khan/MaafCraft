@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,22 +48,22 @@ const HeaderTop = () => {
                         <option>Craft</option>
                     </select>
 
-                    <div>
+                    <div className="flex items-center">
                         <FontAwesomeIcon
                             icon={faSearch}
-                            className=" h-[100%] w-14 p-2 border-2 border-green-600  text-white bg-green-600 hover:cursor-pointer "
+                            className="w-12 p-3 border-green-600  text-white bg-green-600 hover:cursor-pointer hover:bg-green-800 tansition-all"
                         />
                     </div>
                 </div>
 
-                <div className="justify-center items-center h-12 mb-5    hidden md:flex">
-                    <div>
-                        <h1 className="font-semibold hover:cursor-pointer hidden md:block">
+                <div className="h-12 mb-5 hidden md:flex justify-start">
+                    <div className="flex flex-col items-center justify-center gap-1">
+                        <h1 className=" text-xs font-semibold hover:cursor-pointer hidden md:block">
                             CART
                         </h1>
                         <FontAwesomeIcon
                             icon={faShoppingCart}
-                            className="text-back w-10 hover:cursor-pointer"
+                            className="text-back text-2xl w-24 hover:cursor-pointer"
                         />
                     </div>
                     <p className="bg-green-600 h-6 rounded-md items-center ms-1 mt-5 p-1 text-white font-semibold text-xs hover:cursor-pointer">

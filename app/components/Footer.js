@@ -18,7 +18,7 @@ const Footer = () => {
         <div>
             <div className="flex md:flex-row flex-col justify-between md:px-28 px-10 py-12 *:text-xs bg-gray-300">
                 <div className="flex flex-col gap-12 md:w-1/4">
-                    <div className="*:mt-1 *:leading-4">
+                    <div className="*:mb-2 *:leading-4">
                         <h1 className="font-bold text-[14px] my-2">
                             CONTACT DETAILS
                         </h1>
@@ -37,7 +37,7 @@ const Footer = () => {
                         <h1 className="font-bold text-[14px] my-2">
                             WE USING SAFE PAYMENTS:
                         </h1>
-                        <ul className="flex justify-start gap-6 *:w-10">
+                        <ul className="flex justify-start gap-6 *:w-10 *:text-2xl">
                             <FontAwesomeIcon
                                 icon={faLock}
                                 className="hover:cursor-pointer hover:text-green-700 transition-colors"
@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col gap-12 *:mb-2">
                     <div>
                         <h1 className="font-bold text-[14px] my-2">HOT LINE</h1>
                         <p>Call Us for any query</p>
@@ -67,7 +67,7 @@ const Footer = () => {
                         <h1 className="font-bold text-[14px] my-2">
                             SOCIAL NETWORK
                         </h1>
-                        <ul className="flex justify-start gap-3 *:w-6">
+                        <ul className="flex justify-start gap-3 *:w-6 *:text-2xl">
                             <FontAwesomeIcon
                                 icon={faTwitter}
                                 className="hover:cursor-pointer hover:text-green-700 transition-colors"
@@ -88,12 +88,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="*:mb-2">
                     <h1 className="font-bold text-[14px] my-2">MY ACCOUNT</h1>
                     <p>Login</p>
                     <p>Register</p>
                 </div>
-                <div>
+                <div  className="*:mb-2">
                     <h1 className="font-bold text-[14px] my-2">INFORMATION</h1>
                     <p>Site: maafcraft.com</p>
                     <p>Email: maafcraftbd@gmail.com</p>
