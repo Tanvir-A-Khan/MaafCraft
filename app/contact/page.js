@@ -1,108 +1,131 @@
-import React from "react";
+"use client"
+import { faEnvelope, faIndustry, faLocationCrosshairs, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from 'react';
 
-function ContactForm() {
-    return (
-        <div className="md:mx-28 mx-4">
-            <div className="container my-24 mx-auto md:px-6 ">
-                {/* Section: Design Block */}
-                <section className="mb-32">
-                    <div className="flex flex-wrap">
-                        <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                            <h2 className="mb-6 text-3xl font-bold">
-                                Contact us
-                            </h2>
-                            <p className="mb-6 text-black dark:text-black">
-                                <strong>Factory: </strong> South Debipur
-                                (Ranigonj), Ghoraghat, Dinajpur, Bangladesh
-                                <br />
-                                <br />
-                                <strong>Head office: </strong>
-                                Plot #111 (8th Floor), Road #13 (Ranavola
-                                Avenue), Sector #10, Uttara Model Town,
-                                Bangladesh.
-                            </p>
-                            <p className="mb-2 text-black dark:text-black">
-                            Sector #10, Uttara Model Town,
-                                Bangladesh.
-                            </p>
-                            <p className="mb-2 text-black dark:text-black">
-                                +88 01942 257473
-                            </p>
-                            <p className="mb-2 text-black dark:text-black">
-                            maafcraftbd@gmail.com
-                            </p>
-                        </div>
-                        <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                            <form>
-                                <div
-                                    className="relative mb-6"
-                                    data-te-input-wrapper-init
-                                >
-                                    <input
-                                        type="text"
-                                        className=" bg-gray-100 peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-green-800 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black dark:peer-focus:text-green-800 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                        id="exampleInput90"
-                                        placeholder="Name"
-                                    />
-                                    <label
-                                        className=" pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-green-800 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-black dark:peer-focus:text-green-800"
-                                        htmlFor="exampleInput90"
-                                    >
-                                        Name
-                                    </label>
-                                </div>
-                                <div
-                                    className="relative mb-6"
-                                    data-te-input-wrapper-init
-                                >
-                                    <input
-                                        type="email"
-                                        className="bg-gray-100 peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-green-800 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black dark:peer-focus:text-green-800 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                        id="exampleInput91"
-                                        placeholder="Email address"
-                                    />
-                                    <label
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-green-800 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-black dark:peer-focus:text-green-800"
-                                        htmlFor="exampleInput91"
-                                    >
-                                        Email address
-                                    </label>
-                                </div>
-                                <div
-                                    className="relative mb-6"
-                                    data-te-input-wrapper-init
-                                >
-                                    <textarea
-                                        className=" bg-gray-100 peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                        id="exampleFormControlTextarea1"
-                                        rows="3"
-                                        placeholder="Your message"
-                                    ></textarea>
-                                    <label
-                                        htmlFor="exampleFormControlTextarea1"
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-green-800 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-black dark:peer-focus:text-green-800"
-                                    >
-                                        Message
-                                    </label>
-                                </div>
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    comment: ''
+  });
 
-                                <button
-                                    type="button"
-                                    data-te-ripple-init
-                                    data-te-ripple-color="light"
-                                    className="mb-6 inline-block w-full rounded bg-green-800 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-green-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-green-800-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-green-800-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                >
-                                    Send
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-                {/* Section: Design Block */}
-            </div>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle the form submission logic, possibly sending the data to a server
+    console.log(formData);
+  };
+
+  return (
+    <div className='md:mx-28 mx-2'>
+
+    <div className="container flex flex-wrap  flex-col md:flex-row items-center">
+      {/* Form for leaving a message */}
+      <div className="w-full md:w-1/2 bg-white p-8">
+        <h2 className="text-lg mb-5 font-semibold">LEAVE A MESSAGE</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+              Name*
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              Email*
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+              Number Phone
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="phone"
+              type="tel"
+              placeholder="Your Phone Number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              />
+          </div>
+          <div className="mb-6">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="comment">
+              Comment
+            </label>
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="comment"
+              placeholder="Your message..."
+              name="comment"
+              value={formData.comment}
+              onChange={handleChange}
+              />
+          </div>
+          <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+            >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      {/* Contact details */}
+      <div className="w-full md:w-1/2 bg-white p-8">
+        <h2 className="text-lg mb-5 font-semibold">CONTACT DETAIL</h2>
+        <div className="mb-4">
+          <p className="flex items-center text-gray-700 mb-3">
+          <FontAwesomeIcon icon={faEnvelope} className='text-xl p-4' />
+            ecosourcedbd.com@gmail.com
+          </p>
+          <p className="flex items-center text-gray-700 mb-3">
+          <FontAwesomeIcon icon={faPhone} className='text-xl p-4' />
+            +88 01942 257473
+          </p>
+          <p className="flex items-center text-gray-700 mb-3">
+          <FontAwesomeIcon icon={faIndustry} className='text-xl p-4' />
+            Factory: South Debipur (Ranigonj), Ghoraghat, Dinajpur, Bangladesh
+          </p>
+          <p className="flex items-center text-gray-700">
+          <FontAwesomeIcon icon={faLocationCrosshairs}  className='text-xl p-4'/>
+            
+            Head office: Plot #111 (8th Floor), Road #13 (Ranavola Avenue), Sector #10, Uttara Model Town, Bangladesh.
+          </p>
+       
         </div>
-        /* Container for demo purpose */
-    );
-}
+      </div>
+    </div>
+              </div>
+  );
+};
 
 export default ContactForm;

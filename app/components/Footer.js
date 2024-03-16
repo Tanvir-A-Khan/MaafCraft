@@ -5,6 +5,10 @@ import {
     faFacebook,
     faLinkedin,
     faInstagram,
+    faCcMastercard,
+    faCcVisa,
+    faPaypal,
+    faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -35,19 +39,18 @@ const Footer = () => {
                     </div>
                     <div>
                         <h1 className="font-bold text-[14px] my-2">
-                            WE USING SAFE PAYMENTS:
+                            WE ARE USING SAFE PAYMENTS:
                         </h1>
-                        <ul className="flex justify-start gap-6 *:w-10 *:text-2xl">
+                        <ul className="flex justify-start gap-6 *:w-10 *:text-4xl">
+                        <FontAwesomeIcon icon={faCcMastercard} 
+                                className="hover:cursor-pointer hover:text-green-700 transition-colors"
+                        />
                             <FontAwesomeIcon
-                                icon={faLock}
+                                icon={faCcVisa}
                                 className="hover:cursor-pointer hover:text-green-700 transition-colors"
                             />
                             <FontAwesomeIcon
-                                icon={faShield}
-                                className="hover:cursor-pointer hover:text-green-700 transition-colors"
-                            />
-                            <FontAwesomeIcon
-                                icon={faCreditCard}
+                                icon={faPaypal}
                                 className="hover:cursor-pointer hover:text-green-700 transition-colors"
                             />
                         </ul>
@@ -84,6 +87,10 @@ const Footer = () => {
                                 icon={faInstagram}
                                 className="hover:cursor-pointer hover:text-green-700 transition-colors"
                             />
+                            <FontAwesomeIcon
+                                icon={faWhatsapp}
+                                className="hover:cursor-pointer hover:text-green-700 transition-colors"
+                            />
                         </ul>
                     </div>
                 </div>
@@ -105,12 +112,13 @@ const Footer = () => {
                 <span>
                     Copyright © 2024 Maafcraft.com - All rights reserved
                 </span>
-                <ul className="hidden md:flex divide-x-2 *:mx-0 divide-solid divide-[#555555] *:px-[11px]  *:text-[12px]  ">
+                {/* <ul className="hidden md:flex divide-x-2 *:mx-0 divide-solid divide-[#555555] *:px-[11px]  *:text-[12px]  ">
                     <li>About us</li>
                     <li>Privacy Policy</li>
                     <li>Terms & Conditions</li>
                     <li>Return Policy</li>
-                </ul>
+                </ul> */}
+                <span>@Bangladesh</span>
             </div>
         </div>
     );

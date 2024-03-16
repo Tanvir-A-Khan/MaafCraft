@@ -18,7 +18,7 @@ const OurService = () => {
             <h1 className="text-3xl text-center uppercase font-bold text-white pt-4">Our Service
             <p className="text-white text-xs pt-3 font-light">Providing the best service</p>
             </h1>
-            <div className="grid  grid-cols-3 *:m-auto gap-4 my-4 py-10 *:transition-all">
+            <div className="grid  grid-cols-3 *:m-auto p-4 gap-4 my-4 py-10 *:transition-all">
                 <div className="flex flex-col justify-center items-center gap-3">
                     <FontAwesomeIcon
                         icon={faTrophy}
