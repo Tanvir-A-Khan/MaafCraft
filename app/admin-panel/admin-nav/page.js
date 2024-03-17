@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 const AdminNav = () => {
     const path = usePathname();
     return (
-        <div className="ms-28 me-4 my-4 mt-10">
+        <div className="md:ms-28 md:me-4 mx-2 my-4 mt-10">
             <div className="flex flex-col gap-2">
                 <Link
                     href={"/admin-panel/products-management"}

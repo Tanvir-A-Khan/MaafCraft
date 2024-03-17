@@ -2,6 +2,7 @@ import React from "react";
 import Product from "../components/Product";
 import Link from "next/link";
 
+
 const AllProduct = () => {
     return (
         <div className="  px-auto">

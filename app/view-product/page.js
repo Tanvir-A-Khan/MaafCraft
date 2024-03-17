@@ -21,9 +21,9 @@ const ViewProduct = () => {
 
     const zoomProps = {
         width: 600,
-        zoomWidth: 700,
+        zoomWidth: 600,
         img: img,
-        zoomPosition: "right",
+        zoomPosition: "original ",
     };
 
     return (

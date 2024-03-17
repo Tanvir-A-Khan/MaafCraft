@@ -86,7 +86,7 @@ const UserManagement = () => {
             const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
  
             return (
-              <tr key={name}>
+              <tr key={index}>
                 <td className={classes}>
                   <Typography variant="small" color="blue-gray" className="font-normal">
                     {name}
