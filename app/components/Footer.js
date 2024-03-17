@@ -16,6 +16,7 @@ import {
     faShield,
     faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -95,10 +96,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="*:mb-2">
-                    <h1 className="font-bold text-[14px] my-2">MY ACCOUNT</h1>
-                    <p>Login</p>
-                    <p>Register</p>
+                <div className="*:mb-2 flex flex-col">
+                    <h1 className="font-bold text-[14px] my-2 ">MY ACCOUNT</h1>
+                    <Link href="/login" className="mb-4">Login</Link>
+                    
+                    <Link href="/registration">Register</Link>
                 </div>
                 <div  className="*:mb-2">
                     <h1 className="font-bold text-[14px] my-2">INFORMATION</h1>
