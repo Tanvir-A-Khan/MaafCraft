@@ -64,6 +64,9 @@ const TABLE_ROWS = [
 const UserManagement = () => {
   return (
     <Card className="h-full w-[100%]">
+       <h1 className="text-xl text-center my-4 uppercase font-bold mb-8">
+                User Management
+            </h1>
       <table className="w-[100%]  text-left">
         <thead>
           <tr>

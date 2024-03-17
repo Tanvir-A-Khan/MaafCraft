@@ -119,7 +119,7 @@ const Navbar = () => {
                     </div>
                     <Popover
                         animate={{
-                            mount: { scale: 1.7, y: 100,x:-100 },
+                            mount: { scale: 1.7, y: 120, x: -80 },
                             unmount: { scale: 0, y: 25 },
                         }}
                     >
@@ -129,7 +129,7 @@ const Navbar = () => {
                                 <FontAwesomeIcon icon={faBars} />
                             </Button>
                         </PopoverHandler>
-                        <PopoverContent className="z-50 w-fit">
+                        <PopoverContent className="z-50 bg-gray-200 w-56 m-auto ">
                             <ul className="z-50 *:rounded-md *:p-1 ">
                                 {/* Add FontAwesome icon to the first list item */}
                                 <Link
@@ -139,7 +139,7 @@ const Navbar = () => {
                                     <li>
                                         <FontAwesomeIcon
                                             icon={faHome}
-                                            className="text-black text-3xl w-5"
+                                            className="text-black text-3xl w-6"
                                         />
                                     </li>
                                 </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/allproducts"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white "
                                     : null
                             }`}
                                 >
@@ -159,7 +159,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/about"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -170,7 +170,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/certification"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -181,7 +181,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/license"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -193,7 +193,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/membership"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -204,7 +204,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/material-info"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -215,7 +215,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/gallery"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -226,7 +226,7 @@ const Navbar = () => {
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/contact"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -237,7 +237,7 @@ const Navbar = () => {
                                     className={`bg-red-500 hover:bg-red-700 duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/admin-panel"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                                 >
@@ -268,7 +268,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/allproducts"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -279,7 +279,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/about"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -290,7 +290,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/certification"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -301,7 +301,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/license"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -313,7 +313,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/membership"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -324,7 +324,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/material-info"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -335,7 +335,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/gallery"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -346,7 +346,7 @@ const Navbar = () => {
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/contact"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -357,7 +357,7 @@ const Navbar = () => {
                             className={`bg-red-500 hover:bg-red-700 duration-300 hover:cursor-pointer h-[100%] 
                             flex items-center ${
                                 usePathname() === "/admin-panel"
-                                    ? "bg-[#555555]"
+                                    ? "bg-[#555555] text-white"
                                     : null
                             }`}
                         >
@@ -365,7 +365,7 @@ const Navbar = () => {
                         </Link>
                     </ul>
                 </div>
-                <p className="text-gray-600 mx-28 my-4 hidden md:block">
+                <p className="text-gray-600 mx-28 my-4 text-xs hidden md:block">
                     <Link href={"/"}>home</Link> {usePathname()}
                 </p>
             </div>
