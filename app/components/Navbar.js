@@ -58,7 +58,7 @@ const Navbar = () => {
                         />
                     </div>
 
-                    <div className="flex justify-between   h-10 border-2 border-green-600 ">
+                    <div className="hidden md:flex justify-between h-10 border-2 border-green-600 ">
                         <input
                             type="text"
                             placeholder="Enter Product Title"
@@ -105,17 +105,22 @@ const Navbar = () => {
             <div className="sticky top-0 z-10">
                 <div className="flex justify-end items-center gap-10 bg-gray-300 m-2">
                     <div className=" gap-6 h-12  lg:hidden flex flex-row items-center">
-                        <div>
-                            <Link href={"/"}>
-                                <h1 className="font-semibold hover:cursor-pointer h-[100%] items-center hidden lgs:block">
-                                    CART
-                                </h1>
+                        <div className="flex justify-between h-10 border-2 border-green-600 ">
+                            <input
+                                type="text"
+                                placeholder="Search Here"
+                                className="w-36 ps-2 active:border-none  md:hidden"
+                            />
+
+                            <div className="flex items-center">
                                 <FontAwesomeIcon
-                                    icon={faShoppingCart}
-                                    className="text-back  hover:cursor-pointer text-3xl "
+                                    icon={faSearch}
+                                    className="md:hidden block w-12 p-3 border-green-600  text-white bg-green-600 hover:cursor-pointer hover:bg-green-800 tansition-all"
                                 />
-                            </Link>
+                            </div>
                         </div>
+
+                    
                     </div>
                     <Popover
                         animate={{
@@ -139,51 +144,60 @@ const Navbar = () => {
                                     <li>
                                         <FontAwesomeIcon
                                             icon={faHome}
-                                            className="text-black text-3xl w-6"
+                                            className="text-black text-3xl "
                                         />
                                     </li>
+                                </Link>
+                                <Link href={"/"}
+                                className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
+                                flex items-center ${usePathname() === "/allproducts"
+                                                ? "bg-[#555555] text-white "
+                                                : null
+                                            }`}>
+                                    Cart
+
+                                    <FontAwesomeIcon
+                                        icon={faShoppingCart}
+                                        className="text-back  hover:cursor-pointer text-xs "
+                                    />
                                 </Link>
                                 <Link
                                     href="/allproducts"
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/allproducts"
-                                    ? "bg-[#555555] text-white "
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/allproducts"
+                                            ? "bg-[#555555] text-white "
+                                            : null
+                                        }`}
                                 >
                                     <li>All Products</li>
                                 </Link>
                                 <Link
                                     href="/about"
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/about"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/about"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>About</li>
                                 </Link>
                                 <Link
                                     href="/certification"
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/certification"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/certification"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Certification</li>
                                 </Link>
                                 <Link
                                     href="/license"
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/license"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/license"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Legal License</li>
                                 </Link>
@@ -191,55 +205,50 @@ const Navbar = () => {
                                 <Link
                                     href={"/membership"}
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/membership"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/membership"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Membership</li>
                                 </Link>
                                 <Link
                                     href={"/material-info"}
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/material-info"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/material-info"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Materials Info</li>
                                 </Link>
                                 <Link
                                     href={"/gallery"}
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/gallery"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/gallery"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Gallery</li>
                                 </Link>
                                 <Link
                                     href={"/contact"}
                                     className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/contact"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/contact"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Contact</li>
                                 </Link>
                                 <Link
                                     href={"/admin-panel"}
                                     className={`bg-red-500 hover:bg-red-700 duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/admin-panel"
-                                    ? "bg-[#555555] text-white"
-                                    : null
-                            }`}
+                            flex items-center ${usePathname() === "/admin-panel"
+                                            ? "bg-[#555555] text-white"
+                                            : null
+                                        }`}
                                 >
                                     <li>Admin Panel</li>
                                 </Link>
@@ -254,7 +263,7 @@ const Navbar = () => {
                         <Link
                             href="/"
                             className="hover:bg-[#555555] duration-300 hover:cursor-pointer text-white bg-green-600 "
-                            // onClick={}
+                        // onClick={}
                         >
                             <li>
                                 <FontAwesomeIcon
@@ -266,44 +275,40 @@ const Navbar = () => {
                         <Link
                             href="/allproducts"
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/allproducts"
+                            flex items-center ${usePathname() === "/allproducts"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>All Products</li>
                         </Link>
                         <Link
                             href="/about"
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/about"
+                            flex items-center ${usePathname() === "/about"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>About</li>
                         </Link>
                         <Link
                             href="/certification"
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/certification"
+                            flex items-center ${usePathname() === "/certification"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Certification</li>
                         </Link>
                         <Link
                             href="/license"
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/license"
+                            flex items-center ${usePathname() === "/license"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Legal License</li>
                         </Link>
@@ -311,55 +316,50 @@ const Navbar = () => {
                         <Link
                             href={"/membership"}
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/membership"
+                            flex items-center ${usePathname() === "/membership"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Membership</li>
                         </Link>
                         <Link
                             href={"/material-info"}
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/material-info"
+                            flex items-center ${usePathname() === "/material-info"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Materials Info</li>
                         </Link>
                         <Link
                             href={"/gallery"}
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/gallery"
+                            flex items-center ${usePathname() === "/gallery"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Gallery</li>
                         </Link>
                         <Link
                             href={"/contact"}
                             className={`hover:bg-[#555555] duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/contact"
+                            flex items-center ${usePathname() === "/contact"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Contact</li>
                         </Link>
                         <Link
                             href={"/admin-panel"}
                             className={`bg-red-500 hover:bg-red-700 duration-300 hover:cursor-pointer h-[100%] 
-                            flex items-center ${
-                                usePathname() === "/admin-panel"
+                            flex items-center ${usePathname() === "/admin-panel"
                                     ? "bg-[#555555] text-white"
                                     : null
-                            }`}
+                                }`}
                         >
                             <li>Admin Panel</li>
                         </Link>

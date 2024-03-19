@@ -45,7 +45,7 @@ const ViewProduct = () => {
         <div>
             <div>
                 <div className="md:mx-28 m-4 flex md:flex-row flex-col gap-8">
-                    <div className="w-[700px] h-auto flex gap-4 items-start">
+                    <div className="w-fit h-auto flex gap-4 items-start">
                         <div className="flex flex-col justify-start gap-3 ">
                             {/* Displaying the first image separately */}
                             {images.map((image, index) => (

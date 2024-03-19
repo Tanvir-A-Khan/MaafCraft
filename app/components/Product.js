@@ -2,7 +2,7 @@ import React from 'react'
 
 const Product = () => {
   return (
-    <div className="card w-60 h-54 bg-base-100 shadow-xl ">
+    <div className="card lg:w-60 lg:h-54 w-28  bg-base-100 shadow-xl ">
             <figure>
                 <img
                     src="./prod1.jpg"
